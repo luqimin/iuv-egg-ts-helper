@@ -1,4 +1,14 @@
-# egg-ts-helper
+# ime-egg-ts-helper
+
+## 修改说明
+
+修改自 `egg-ts-helper`，适配ime同构框架。
+
+------
+
+## 以下为原README
+
+------
 
 [![NPM version][npm-image]][npm-url]
 [![Package Quality](http://npm.packagequality.com/shield/egg-ts-helper.svg)](http://packagequality.com/#?package=egg-ts-helper)
