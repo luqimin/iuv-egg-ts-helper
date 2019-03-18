@@ -1,7 +1,7 @@
 {
-  "name": "egg-ts-helper",
+  "name": "ime-egg-ts-helper",
   "version": "1.24.1",
-  "description": "egg typescript helper",
+  "description": "egg typescript helper for ime",
   "bin": {
     "ets": "dist/bin.js"
   },
@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git@github.com:whxaxes/egg-ts-helper.git"
+    "url": "git@git.sogou-inc.com:ime/ime-egg-ts-helper.git"
   },
   "scripts": {
     "build": "tsc -d",
@@ -29,7 +29,7 @@
     "dist",
     "register.js"
   ],
-  "author": "wanghx",
+  "author": "luqimin",
   "license": "MIT",
   "dependencies": {
     "cache-require-paths": "^0.3.0",
@@ -39,13 +39,12 @@
     "enquirer": "^2.3.0",
     "globby": "^8.0.1",
     "mkdirp": "^0.5.1",
-    "ts-node": "^7.0.0",
     "tslib": "^1.9.3",
     "typescript": "^3.0.0",
     "yn": "^3.0.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "http://r.sogou/"
   },
   "devDependencies": {
     "@types/chokidar": "^1.7.4",

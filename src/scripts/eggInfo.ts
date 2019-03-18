@@ -6,17 +6,14 @@ import 'cache-require-paths';
 import fs from 'fs';
 import path from 'path';
 import { eggInfoPath } from '../config';
-import { requireFile, getPkgInfo, writeFileSync, EggInfoResult, checkMaybeIsTsProj } from '../utils';
+import { requireFile, getPkgInfo, writeFileSync, EggInfoResult } from '../utils';
 const cwd = process.cwd();
+const baseDir: string = `${cwd}/server`;
 const eggInfo: EggInfoResult = {};
 const startTime = Date.now();
-if (checkMaybeIsTsProj(cwd)) {
-  // only require ts-node in ts project
-  require('ts-node/register');
-}
 
-const framework = (getPkgInfo(cwd).egg || {}).framework || 'egg';
-const loader = getLoader(cwd, framework);
+const framework = (getPkgInfo(baseDir).egg || {}).framework || 'egg';
+const loader = getLoader(baseDir, framework);
 if (loader) {
   try {
     loader.loadPlugin();
@@ -47,7 +44,7 @@ if (loader) {
 writeFileSync(eggInfoPath, JSON.stringify(eggInfo));
 
 /* istanbul ignore next */
-function noop() {}
+function noop() { }
 
 function mockFn(obj, name, fn) {
   const oldFn = obj[name];
@@ -68,7 +65,7 @@ function getLoader(baseDir: string, framework: string) {
   if (!egg || !EggLoader) return;
   process.env.EGG_SERVER_ENV = 'local';
   return new EggLoader({
-    baseDir,
+    baseDir: process.env.IME_SERVER_PATH || baseDir,
     logger: {
       debug: noop,
       info: noop,

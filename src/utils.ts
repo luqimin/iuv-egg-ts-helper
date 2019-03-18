@@ -64,7 +64,7 @@ export function getEggInfo<T extends 'async' | 'sync' = 'sync'>(cwd: string, opt
   cacheEggInfo[cwd] = cacheEggInfo[cwd] || {};
   const cmd = `node ${path.resolve(__dirname, './scripts/eggInfo')}`;
   const opt: ExecOptions = {
-    cwd,
+    cwd: process.cwd(),
     env: {
       ...process.env,
       TS_NODE_TYPE_CHECK: 'false',
