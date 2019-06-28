@@ -153,7 +153,26 @@ In `package.json`
           "enabled": true,
           "generator": "function",
           "interfaceHandle": "InstanceType<{{ 0 }}>"
-        },
+        }
+      }
+    }
+  }
+}
+```
+
+or use `dot-prop`
+
+```json
+// {cwd}/package.json
+
+{
+  "egg": {
+    "framework": "egg",
+    "tsHelper": {
+      "watchDirs.model": {
+        "enabled": true,
+        "generator": "function",
+        "interfaceHandle": "InstanceType<{{ 0 }}>"
       }
     }
   }

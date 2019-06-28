@@ -1,4 +1,43 @@
 
+1.25.5 / 2019-06-23
+==================
+
+**fixes**
+  * [[`8dcb9f2`](http://github.com/whxaxes/egg-ts-helper/commit/8dcb9f2da0814370f789a64d7f817b075971f8c7)] - fix: duplicate declaration (#50) (吖猩 <<whxaxes@gmail.com>>)
+
+1.25.4 / 2019-06-10
+==================
+
+**features**
+  * [[`8003dc2`](http://github.com/whxaxes/egg-ts-helper/commit/8003dc238ab845c291ee6c6a2e390f2669dbd8a0)] - feat: remove compatible for sequelize (#49) (吖猩 <<whxaxes@gmail.com>>)
+
+1.25.3 / 2019-05-26
+==================
+
+**fixes**
+  * [[`0cce02d`](http://github.com/whxaxes/egg-ts-helper/commit/0cce02dab86f05573fd50eccd703e4e23a7cb569)] - fix: same name dir and file (#48) (吖猩 <<whxaxes@gmail.com>>)
+
+1.25.2 / 2019-03-26
+==================
+
+**fixes**
+  * [[`928fad6`](http://github.com/whxaxes/egg-ts-helper/commit/928fad663cdf5da7352c7fd534dcd4d46d238d59)] - fix: downgrade ts-node (#46) (吖猩 <<whxaxes@qq.com>>)
+
+1.25.1 / 2019-03-25
+===================
+
+  * [[`f36d699`](http://github.com/whxaxes/egg-ts-helper/commit/f36d69934403424f9715984dc9483c038b89725d)] - fix: check framework before deprecated (wanghx <<whxaxes@gmail.com>>)
+
+1.25.0 / 2019-03-25
+===================
+
+  * [[`958b117`](http://github.com/whxaxes/egg-ts-helper/commit/958b1172c09a59eb0122bfa5e8afe9b296325faa)] - feat: config improvement (#45) (吖猩 <<whxaxes@qq.com>>)
+
+1.24.2 / 2019-03-21
+===================
+
+  * fix: should clean file more intelligent (#44)
+
 1.24.1 / 2019-03-11
 ===================
 
