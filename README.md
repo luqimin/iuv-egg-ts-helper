@@ -1,8 +1,8 @@
-# ime-egg-ts-helper
+# iuv-egg-ts-helper
 
 ## 修改说明
 
-修改自 `egg-ts-helper`，适配ime同构框架。
+修改自 `egg-ts-helper`，适配iuv同构框架。
 
 ------
 

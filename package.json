@@ -1,7 +1,7 @@
 {
-  "name": "ime-egg-ts-helper",
-  "version": "2.1.0",
-  "description": "egg typescript helper for ime",
+  "name": "iuv-egg-ts-helper",
+  "version": "1.0.0",
+  "description": "egg typescript helper for iuv",
   "bin": {
     "ets": "dist/bin.js"
   },
@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git@git.sogou-inc.com:ime/ime-egg-ts-helper.git"
+    "url": "git@github.com:luqimin/iuv-egg-ts-helper.git"
   },
   "scripts": {
     "build": "tsc -d",
