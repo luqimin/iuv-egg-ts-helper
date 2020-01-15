@@ -69,7 +69,7 @@ function getLoader(baseDir: string, framework: string) {
   if (!egg || !EggLoader) return;
   process.env.EGG_SERVER_ENV = 'local';
   return new EggLoader({
-    baseDir: process.env.IME_SERVER_PATH || baseDir,
+    baseDir: process.env.IUV_SERVER_PATH || process.env.IME_SERVER_PATH || baseDir,
     logger: {
       debug: noop,
       info: noop,
